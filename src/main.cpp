@@ -27,7 +27,7 @@ void setup()
   rgbLed.setBrightness(0);
   rgbLed.show();
   
-  robotServer.begin(WIFI_SSID, WIFI_PASS, false);
+  robotServer.begin(WIFI_SSID, WIFI_PASS, true);
   robotServer.enableOTA(OTA_PASSWORD);
   robotServer.registerVar("red", red);
   robotServer.registerVar("green", green);
